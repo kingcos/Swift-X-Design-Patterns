@@ -19,9 +19,9 @@
 
 ## 目录
 
-1. [简单工厂模式（Simple Factory Pattern）](01-Simple_Factory_Pattern.playground)
-2. [工厂方法模式（Factory Method Pattern）](02-Factory_Method_Pattern.playground)
-3. [抽象工厂模式（Abstract Factory Pattern）](03-Abstract_Factory_Pattern.playground)
+1. [简单工厂模式（Simple Factory Pattern）](01-Simple_Factory_Pattern.playground/Contents.swift)
+2. [工厂方法模式（Factory Method Pattern）](02-Factory_Method_Pattern.playground/Contents.swift)
+3. [抽象工厂模式（Abstract Factory Pattern）](03-Abstract_Factory_Pattern.playground/Contents.swift)
 
 ## 参考资料
 
