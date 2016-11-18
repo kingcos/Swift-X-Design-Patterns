@@ -14,49 +14,49 @@ protocol Operator {
 
 // 遵守协议
 struct Addition: Operator {
-    internal static func createOperation() -> Operator {
+    static func createOperation() -> Operator {
         return Addition()
     }
     
-    internal var num = (0.0, 0.0)
+    var num = (0.0, 0.0)
     
-    internal func getResult() -> Double? {
+    func getResult() -> Double? {
         return num.0 + num.1
     }
 }
 
 struct Subtraction: Operator {
-    internal static func createOperation() -> Operator {
+    static func createOperation() -> Operator {
         return Subtraction()
     }
     
-    internal var num = (0.0, 0.0)
+    var num = (0.0, 0.0)
     
-    internal func getResult() -> Double? {
+    func getResult() -> Double? {
         return num.0 - num.1
     }
 }
 
 struct Multiplication: Operator {
-    internal static func createOperation() -> Operator {
+    static func createOperation() -> Operator {
         return Multiplication()
     }
     
-    internal var num = (0.0, 0.0)
+    var num = (0.0, 0.0)
     
-    internal func getResult() -> Double? {
+    func getResult() -> Double? {
         return num.0 * num.1
     }
 }
 
 struct Division: Operator {
-    internal static func createOperation() -> Operator {
+    static func createOperation() -> Operator {
         return Division()
     }
     
-    internal var num = (0.0, 0.0)
+    var num = (0.0, 0.0)
     
-    internal func getResult() -> Double? {
+    func getResult() -> Double? {
         var result: Double?
         if num.1 != 0 {
             result = num.0 / num.1
@@ -68,3 +68,7 @@ struct Division: Operator {
 var testAddition = Addition.createOperation()
 testAddition.num = (2, 3)
 print(testAddition.getResult() ?? "Error")
+
+var testDivision = Division.createOperation()
+testDivision.num = (2, 0)
+print(testDivision.getResult() ?? "Error")

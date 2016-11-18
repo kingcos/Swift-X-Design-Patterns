@@ -71,3 +71,7 @@ enum OperatorFactory {
 var testDivision = OperatorFactory.calculateForOperator(.Division)
 testDivision.num = (1, 0)
 print(testDivision.getResult() ?? "Error")
+
+var testAddition = OperatorFactory.calculateForOperator(.Addition)
+testAddition.num = (1, 1)
+print(testAddition.getResult() ?? "Error")
