@@ -14,19 +14,19 @@
 
 **由于能力有限，虽在不断学习，但不免有错误，希望您能在 GitHub 中提出 Issue 或者评论告诉我，我都会细心研究，改正错误。谢谢！**
 
-[个人博客地址：https://maimieng.com](https://maimieng.com)
-[简书个人主页](http://www.jianshu.com/users/b88081164fe8/latest_articles)
+- [博客](https://maimieng.com)
+- [简书](http://www.jianshu.com/users/b88081164fe8/latest_articles)
 
 ## 目录
 
-- [简单工厂模式]()
-- [工厂方法模式]()
-- [抽象工厂模式]()
+1. [简单工厂模式（Simple Factory Pattern）](01-Simple_Factory_Pattern.playground)
+2. [工厂方法模式（Factory Method Pattern）](02-Factory_Method_Pattern.playground)
+3. [抽象工厂模式（Abstract Factory Pattern）](03-Abstract_Factory_Pattern.playground)
 
 ## 参考资料
 
-[大话设计模式](https://book.douban.com/subject/2334288/)
-[ochococo/Design-Patterns-In-Swift](https://github.com/ochococo/Design-Patterns-In-Swift)
+- [大话设计模式](https://book.douban.com/subject/2334288/)
+- [ochococo/Design-Patterns-In-Swift](https://github.com/ochococo/Design-Patterns-In-Swift)
 
 ## 许可
 
