@@ -11,7 +11,7 @@ protocol Operator {
 }
 
 // 遵守协议
-class Addition: Operator {
+struct Addition: Operator {
     var num = (0.0, 0.0)
     
     func getResult() -> Double? {
@@ -27,7 +27,7 @@ class Subtraction: Operator {
     }
 }
 
-class Multiplication: Operator {
+struct Multiplication: Operator {
     var num = (0.0, 0.0)
     
     func getResult() -> Double? {
@@ -35,7 +35,7 @@ class Multiplication: Operator {
     }
 }
 
-class Division: Operator {
+struct Division: Operator {
     var num = (0.0, 0.0)
     
     func getResult() -> Double? {
@@ -53,7 +53,7 @@ enum Operators {
 }
 
 // 工厂
-enum OperatorFactory {
+struct OperatorFactory {
     static func calculateForOperator(_ opt: Operators) -> Operator {
         switch opt {
         case .Addition:
