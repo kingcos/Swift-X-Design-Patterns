@@ -23,6 +23,10 @@
 2. [工厂方法模式（Factory Method Pattern）](02-Factory_Method_Pattern.playground/Contents.swift)
 3. [抽象工厂模式（Abstract Factory Pattern）](03-Abstract_Factory_Pattern.playground/Contents.swift)
 
+## 文章
+
+- [Swift 中的值类型与引用类型](http://www.jianshu.com/p/ba12b64f6350)
+
 ## 参考资料
 
 - [大话设计模式](https://book.douban.com/subject/2334288/)
