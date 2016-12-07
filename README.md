@@ -22,6 +22,7 @@ If my code did help you, would you please give me a Star 🌟? It will courage m
 1. [Simple Factory Pattern](01-Simple_Factory_Pattern.playground/Contents.swift)
 2. [Factory Method Pattern](02-Factory_Method_Pattern.playground/Contents.swift)
 3. [Abstract Factory Pattern](03-Abstract_Factory_Pattern.playground/Contents.swift)
+4. [Strategy Pattern](04-Strategy_Pattern.playground/Contents.swift)
 
 ## Reference
 
