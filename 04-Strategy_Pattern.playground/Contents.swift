@@ -50,7 +50,7 @@ struct CashReturn: CashSuper {
 
 // 优惠方式
 enum DiscountWays {
-    case byDefault, twentyPersentOff, threeHundredSubOneHundred
+    case byDefault, twentyPersentOff, every300Get100Return
 }
 
 struct CashContext {
@@ -72,7 +72,7 @@ struct CashContextWithSimpleFactoryPattern {
         switch type {
         case .twentyPersentOff:
             cs = CashRebate(0.8)
-        case .threeHundredSubOneHundred:
+        case .every300Get100Return:
             cs = CashReturn(300, 100)
         default:
             cs = CashNormal()
@@ -90,7 +90,7 @@ var cc: CashContext
 switch type {
 case .twentyPersentOff:
     cc = CashContext(CashRebate(0.8))
-case .threeHundredSubOneHundred:
+case .every300Get100Return:
     cc = CashContext(CashReturn(300, 100))
 default:
     cc = CashContext(CashNormal())
@@ -104,5 +104,5 @@ cs.getResult(100)
 cs = CashContextWithSimpleFactoryPattern(.twentyPersentOff)
 cs.getResult(200.5)
 
-cs = CashContextWithSimpleFactoryPattern(.threeHundredSubOneHundred)
+cs = CashContextWithSimpleFactoryPattern(.every300Get100Return)
 cs.getResult(650)

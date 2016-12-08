@@ -49,29 +49,29 @@ struct Division: Operator {
 
 // 操作符枚举
 enum Operators {
-    case Addition, Subtraction, Multiplication, Division
+    case addition, subtraction, multiplication, division
 }
 
 // 工厂
 struct OperatorFactory {
     static func calculateForOperator(_ opt: Operators) -> Operator {
         switch opt {
-        case .Addition:
+        case .addition:
             return Addition()
-        case .Subtraction:
+        case .subtraction:
             return Subtraction()
-        case .Multiplication:
+        case .multiplication:
             return Multiplication()
-        case .Division:
+        case .division:
             return Division()
         }
     }
 }
 
-var testDivision = OperatorFactory.calculateForOperator(.Division)
+var testDivision = OperatorFactory.calculateForOperator(.division)
 testDivision.num = (1, 0)
 print(testDivision.getResult() ?? "Error")
 
-var testAddition = OperatorFactory.calculateForOperator(.Addition)
+var testAddition = OperatorFactory.calculateForOperator(.addition)
 testAddition.num = (1, 1)
 print(testAddition.getResult() ?? "Error")

@@ -32,18 +32,18 @@ struct Subtraction: Operator {
 
 // 遵守协议
 struct Add: Calculator {
-    internal var num = (0.0, 0.0)
+    var num = (0.0, 0.0)
     
-    internal func getResult() -> Double? {
+    func getResult() -> Double? {
         return num.0 + num.1
     }
 }
 
 // 遵守协议
 struct Subtract: Calculator {
-    internal var num = (0.0, 0.0)
+    var num = (0.0, 0.0)
     
-    internal func getResult() -> Double? {
+    func getResult() -> Double? {
         return num.0 - num.1
     }
 }
