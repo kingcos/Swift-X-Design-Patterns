@@ -24,6 +24,7 @@
 3. [抽象工厂模式（Abstract Factory Pattern）](03-Abstract_Factory_Pattern.playground/Contents.swift)
 4. [策略模式（Strategy Pattern）](04-Strategy_Pattern.playground/Contents.swift)
 5. [装饰模式（Decorator Pattern）](05-Decorator_Pattern.playground/Contents.swift)
+6. [代理模式（Proxy Pattern）](06-Proxy_Pattern.playground/Contents.swift)
 
 ## 文章
 
