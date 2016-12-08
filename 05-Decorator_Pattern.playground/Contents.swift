@@ -3,11 +3,14 @@
 
 import UIKit
 
-class Person {
+protocol Person {
+    func show()
+}
+
+struct Boy: Person {
     var name = ""
-    
+
     init() {}
-    
     init(_ name: String) {
         self.name = name
     }
@@ -19,13 +22,13 @@ class Person {
 
 // 饰物
 class Finery: Person {
-    var component = Person()
+    var component: Person
     
-    func decorate(_ component: Person) {
+    init(_ component: Person) {
         self.component = component
     }
     
-    override func show() {
+    func show() {
         component.show()
     }
 }
@@ -44,20 +47,15 @@ class ChineseTunicSuit: Finery {
     }
 }
 
-var p = Person("Kingcos")
-let tShirtA = TShirt()
-let chineseTunicSuitA = ChineseTunicSuit()
+var p = Boy("Kingcos")
 
 // 按顺序装饰
-tShirtA.decorate(p)
-chineseTunicSuitA.decorate(tShirtA)
+let tShirtA = TShirt(p)
+let chineseTunicSuitA = ChineseTunicSuit(tShirtA)
 
 chineseTunicSuitA.show()
 
-let tShirtB = TShirt()
-let chineseTunicSuitB = ChineseTunicSuit()
-
-chineseTunicSuitB.decorate(p)
-tShirtB.decorate(chineseTunicSuitB)
+let chineseTunicSuitB = ChineseTunicSuit(p)
+let tShirtB = TShirt(chineseTunicSuitB)
 
 tShirtB.show()
