@@ -23,6 +23,7 @@
 2. [工厂方法模式（Factory Method Pattern）](02-Factory_Method_Pattern.playground/Contents.swift)
 3. [抽象工厂模式（Abstract Factory Pattern）](03-Abstract_Factory_Pattern.playground/Contents.swift)
 4. [策略模式（Strategy Pattern）](04-Strategy_Pattern.playground/Contents.swift)
+5. [装饰模式（Decorator Pattern）](05-Decorator_Pattern.playground/Contents.swift)
 
 ## 文章
 
