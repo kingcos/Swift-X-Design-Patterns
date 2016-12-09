@@ -25,6 +25,7 @@
 4. [策略模式（Strategy Pattern）](04-Strategy_Pattern.playground/Contents.swift)
 5. [装饰模式（Decorator Pattern）](05-Decorator_Pattern.playground/Contents.swift)
 6. [代理模式（Proxy Pattern）](06-Proxy_Pattern.playground/Contents.swift)
+7. [原型模式（Prototype Pattern）](07-Prototype_Pattern.playground/Contents.swift)
 
 ## 文章
 

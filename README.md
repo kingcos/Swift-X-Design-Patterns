@@ -25,6 +25,7 @@ If my code did help you, would you please give me a Star 🌟? It will courage m
 4. [Strategy Pattern](04-Strategy_Pattern.playground/Contents.swift)
 5. [Decorator Pattern](05-Decorator_Pattern.playground/Contents.swift)
 6. [Proxy Pattern](06-Proxy_Pattern.playground/Contents.swift)
+7. [Prototype Pattern](07-Prototype_Pattern.playground/Contents.swift)
 
 ## Reference
 
