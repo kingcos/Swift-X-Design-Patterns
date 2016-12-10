@@ -28,6 +28,7 @@ If my code did help you, would you please give me a Star 🌟? It will courage m
 7. [Prototype Pattern](07-Prototype_Pattern.playground/Contents.swift)
 8. [Template Pattern](08-Template_Pattern.playground/Contents.swift)
 9. [Facade Pattern](09-Facade_Pattern.playground/Contents.swift)
+10. [Builder Pattern](10-Builder_Pattern.playground/Contents.swift)
 
 ## Reference
 
