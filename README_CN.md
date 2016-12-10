@@ -27,6 +27,7 @@
 6. [代理模式（Proxy Pattern）](06-Proxy_Pattern.playground/Contents.swift)
 7. [原型模式（Prototype Pattern）](07-Prototype_Pattern.playground/Contents.swift)
 8. [模版模式（Template Pattern）](08-Template_Pattern.playground/Contents.swift)
+9. [外观模式（Facade Pattern）](09-Facade_Pattern.playground/Contents.swift)
 
 ## 文章
 
