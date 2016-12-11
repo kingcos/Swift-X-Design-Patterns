@@ -3,55 +3,102 @@
 
 import UIKit
 
-// 协议
-protocol Operator {
-    // 工厂
-    static func calculate() -> Calculator
-}
+struct User {}
 
 // 协议
-protocol Calculator {
-    var num: (Double, Double) { get set }
+protocol IUser {
+    func insert(_ user: User)
+    func get(_ id: Int) -> User
+}
+
+struct SqlServerUser: IUser {
+    func insert(_ user: User) {
+        print("\(#function) user")
+    }
     
-    func getResult() -> Double?
-}
-
-struct Addition: Operator {
-    // 工厂
-    static func calculate() -> Calculator {
-        return Add()
+    func get(_ id: Int) -> User {
+        print("\(#function) user")
+        return User()
     }
 }
 
-struct Subtraction: Operator {
-    // 工厂
-    static func calculate() -> Calculator {
-        return Subtract()
+struct AccessUser: IUser {
+    func insert(_ user: User) {
+        print("\(#function) user")
     }
-}
-
-// 遵守协议
-struct Add: Calculator {
-    var num = (0.0, 0.0)
     
-    func getResult() -> Double? {
-        return num.0 + num.1
+    func get(_ id: Int) -> User {
+        print("\(#function) user")
+        return User()
     }
 }
 
-// 遵守协议
-struct Subtract: Calculator {
-    var num = (0.0, 0.0)
+struct Department {}
+
+// 协议
+protocol IDepartment {
+    func insert(_ department: Department)
+    func get(_ id: Int) -> Department
+}
+
+struct SqlServerDepartment: IDepartment {
+    func insert(_ department: Department) {
+        print("\(#function) department")
+    }
     
-    func getResult() -> Double? {
-        return num.0 - num.1
+    func get(_ id: Int) -> Department {
+        print("\(#function) department")
+        return Department()
     }
 }
 
-var factory = Addition.calculate()
-factory.num = (1, 1)
-print(factory.getResult() ?? "Error")
+struct AccessDepartment: IDepartment {
+    func insert(_ department: Department) {
+        print("\(#function) department")
+    }
+    
+    func get(_ id: Int) -> Department {
+        print("\(#function) department")
+        return Department()
+    }
+}
 
-factory = Subtraction.calculate()
-factory.num = (1, 1)
-print(factory.getResult() ?? "Error")
+// 工厂协议
+protocol IFactory {
+    func createUser() -> IUser
+    func createDepartment() -> IDepartment
+}
+
+struct SqlServerFactory: IFactory {
+    func createUser() -> IUser {
+        return SqlServerUser()
+    }
+    
+    func createDepartment() -> IDepartment {
+        return SqlServerDepartment()
+    }
+}
+
+struct AccessFactory: IFactory {
+    func createUser() -> IUser {
+        return AccessUser()
+    }
+    
+    func createDepartment() -> IDepartment {
+        return AccessDepartment()
+    }
+}
+
+let user = User()
+let department = Department()
+
+let factory: IFactory
+factory = AccessFactory()
+
+let iu = factory.createUser()
+iu.insert(user)
+iu.get(1)
+
+let id = factory.createDepartment()
+id.insert(department)
+id.get(1)
