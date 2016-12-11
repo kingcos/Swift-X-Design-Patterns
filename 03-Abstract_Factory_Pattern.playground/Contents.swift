@@ -89,16 +89,55 @@ struct AccessFactory: IFactory {
     }
 }
 
-let user = User()
-let department = Department()
+let userA = User()
+let departmentA = Department()
 
 let factory: IFactory
 factory = AccessFactory()
 
-let iu = factory.createUser()
-iu.insert(user)
-iu.get(1)
+let iuA = factory.createUser()
+iuA.insert(userA)
+iuA.get(1)
 
-let id = factory.createDepartment()
-id.insert(department)
-id.get(1)
+let idA = factory.createDepartment()
+idA.insert(departmentA)
+idA.get(1)
+
+// 简单工厂 + 抽象工厂
+enum Database {
+    case sqlServer, access
+}
+
+struct DataAccess {
+    static var database: Database = .access
+    
+    static func createUser() -> IUser {
+        switch database {
+        case .sqlServer:
+            return SqlServerUser()
+        case .access:
+            return AccessUser()
+        }
+    }
+    
+    static func createDepartment() -> IDepartment {
+        switch database {
+        case .sqlServer:
+            return SqlServerDepartment()
+        case .access:
+            return AccessDepartment()
+        }
+    }
+}
+
+let userB = User()
+let departmentB = Department()
+
+DataAccess.database = .sqlServer
+let iuB = DataAccess.createUser()
+iuB.insert(userB)
+iuB.get(1)
+
+let idB = DataAccess.createDepartment()
+idB.insert(departmentB)
+idB.get(1)
