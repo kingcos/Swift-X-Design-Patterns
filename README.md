@@ -30,6 +30,7 @@ If my code did help you, would you please give me a Star 🌟? It will courage m
 9. [Facade Pattern](09-Facade_Pattern.playground/Contents.swift)
 10. [Builder Pattern](10-Builder_Pattern.playground/Contents.swift)
 11. [Observer Pattern](11-Observer_Pattern.playground/Contents.swift)
+12. [Delegate Pattern](12-Delegate_Pattern.playground/Contents.swift)
 
 ## Reference
 
