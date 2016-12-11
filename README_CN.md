@@ -29,6 +29,7 @@
 8. [模版模式（Template Pattern）](08-Template_Pattern.playground/Contents.swift)
 9. [外观模式（Facade Pattern）](09-Facade_Pattern.playground/Contents.swift)
 10. [建造者模式（Builder Pattern）](10-Builder_Pattern.playground/Contents.swift)
+11. [观察者模式（Observer Pattern）](11-Observer_Pattern.playground/Contents.swift)
 
 ## 文章
 
