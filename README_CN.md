@@ -31,6 +31,8 @@
 10. [建造者模式（Builder Pattern）](10-Builder_Pattern.playground/Contents.swift)
 11. [观察者模式（Observer Pattern）](11-Observer_Pattern.playground/Contents.swift)
 12. [委托模式（Delegate Pattern）](12-Delegate_Pattern.playground/Contents.swift)
+13. [状态模式（State Pattern）](13-State_Pattern.playground/Contents.swift)
+14. [适配器模式（Adapter Pattern）](14-Adapter_Pattern.playground/Contents.swift)
 
 ## 文章
 

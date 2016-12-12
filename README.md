@@ -31,6 +31,8 @@ If my code did help you, would you please give me a Star 🌟? It will courage m
 10. [Builder Pattern](10-Builder_Pattern.playground/Contents.swift)
 11. [Observer Pattern](11-Observer_Pattern.playground/Contents.swift)
 12. [Delegate Pattern](12-Delegate_Pattern.playground/Contents.swift)
+13. [State Pattern](13-State_Pattern.playground/Contents.swift)
+14. [Adapter Pattern](14-Adapter_Pattern.playground/Contents.swift)
 
 ## Reference
 
