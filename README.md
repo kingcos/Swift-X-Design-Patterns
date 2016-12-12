@@ -34,6 +34,7 @@ If my code did help you, would you please give me a Star 🌟? It will courage m
 13. [State Pattern](13-State_Pattern.playground/Contents.swift)
 14. [Adapter Pattern](14-Adapter_Pattern.playground/Contents.swift)
 15. [Memento Pattern](15-Memento_Pattern.playground/Contents.swift)
+16. [Composite Pattern](16-Composite_Pattern.playground/Contents.swift)
 
 ## Reference
 
