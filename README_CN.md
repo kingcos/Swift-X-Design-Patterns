@@ -33,6 +33,7 @@
 12. [委托模式（Delegate Pattern）](12-Delegate_Pattern.playground/Contents.swift)
 13. [状态模式（State Pattern）](13-State_Pattern.playground/Contents.swift)
 14. [适配器模式（Adapter Pattern）](14-Adapter_Pattern.playground/Contents.swift)
+15. [备忘录模式（Memento Pattern）](15-Memento_Pattern.playground/Contents.swift)
 
 ## 文章
 
