@@ -36,6 +36,7 @@ If my code did help you, would you please give me a Star 🌟? It will courage m
 15. [Memento Pattern](15-Memento_Pattern.playground/Contents.swift)
 16. [Composite Pattern](16-Composite_Pattern.playground/Contents.swift)
 17. [Iterator Pattern](17-Iterator_Pattern.playground/Contents.swift)
+18. [Singleton Pattern](18-Singleton_Pattern.playground/Contents.swift)
 
 ## Reference
 
