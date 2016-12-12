@@ -37,6 +37,7 @@
 16. [组合模式（Composite Pattern）](16-Composite_Pattern.playground/Contents.swift)
 17. [迭代器模式（Iterator Pattern）](17-Iterator_Pattern.playground/Contents.swift)
 18. [单例模式（Singleton Pattern）](18-Singleton_Pattern.playground/Contents.swift)
+19. [桥接模式（Bridge Pattern）](19-Bridge_Pattern.playground/Contents.swift)
 
 ## 文章
 

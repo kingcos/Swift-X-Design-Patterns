@@ -37,6 +37,7 @@ If my code did help you, would you please give me a Star 🌟? It will courage m
 16. [Composite Pattern](16-Composite_Pattern.playground/Contents.swift)
 17. [Iterator Pattern](17-Iterator_Pattern.playground/Contents.swift)
 18. [Singleton Pattern](18-Singleton_Pattern.playground/Contents.swift)
+19. [Bridge Pattern](19-Bridge_Pattern.playground/Contents.swift)
 
 ## Reference
 
