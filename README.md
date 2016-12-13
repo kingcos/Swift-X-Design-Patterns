@@ -43,6 +43,7 @@ If my code did help you, would you please give me a Star 🌟? It will courage m
 22. [Mediator Pattern](22-Mediator_Pattern.playground/Contents.swift)
 23. [Flyweight Pattern](23-Flyweight_Pattern.playground/Contents.swift)
 24. [Interpreter Pattern](24-Interpreter_Pattern.playground/Contents.swift)
+25. [Visitor Pattern](25-Visitor_Pattern.playground/Contents.swift)
 
 ## Reference
 

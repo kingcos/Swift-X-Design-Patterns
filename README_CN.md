@@ -43,6 +43,7 @@
 22. [中介者模式（Mediator Pattern）](22-Mediator_Pattern.playground/Contents.swift)
 23. [享元模式（Flyweight Pattern）](23-Flyweight_Pattern.playground/Contents.swift)
 24. [解释器模式（Interpreter Pattern）](24-Interpreter_Pattern.playground/Contents.swift)
+25. [访问者模式（Visitor Pattern）](25-Visitor_Pattern.playground/Contents.swift)
 
 ## 文章
 
