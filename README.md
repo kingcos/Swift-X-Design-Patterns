@@ -39,6 +39,7 @@ If my code did help you, would you please give me a Star 🌟? It will courage m
 18. [Singleton Pattern](18-Singleton_Pattern.playground/Contents.swift)
 19. [Bridge Pattern](19-Bridge_Pattern.playground/Contents.swift)
 20. [Command Pattern](20-Command_Pattern.playground/Contents.swift)
+21. [Chain of Responsibility Pattern](21-Chain_of_Responsibility_Pattern.playground/Contents.swift)
 
 ## Reference
 
