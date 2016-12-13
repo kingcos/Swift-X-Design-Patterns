@@ -3,13 +3,13 @@
 
 import UIKit
 
-enum BBQ: String {
-    case mutton = "烤羊肉串"
-    case chickenWing = "烤鸡翅"
-}
-
 // 烧烤
 struct Barbecuer {
+    enum BBQ: String {
+        case mutton = "烤羊肉串"
+        case chickenWing = "烤鸡翅"
+    }
+    
     var state: BBQ = .mutton
     
     mutating func bakeMutton() {
