@@ -5,7 +5,7 @@ import UIKit
 
 // 协议
 protocol Subject {
-    var updates: [() -> ()] { get set }
+    var updates: [() -> ()] { get }
     func notify()
 }
 
