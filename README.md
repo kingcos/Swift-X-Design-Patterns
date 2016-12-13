@@ -41,6 +41,7 @@ If my code did help you, would you please give me a Star 🌟? It will courage m
 20. [Command Pattern](20-Command_Pattern.playground/Contents.swift)
 21. [Chain of Responsibility Pattern](21-Chain_of_Responsibility_Pattern.playground/Contents.swift)
 22. [Mediator Pattern](22-Mediator_Pattern.playground/Contents.swift)
+23. [Flyweight Pattern](23-Flyweight_Pattern.playground/Contents.swift)
 
 ## Reference
 

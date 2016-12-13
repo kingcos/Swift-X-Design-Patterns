@@ -41,6 +41,7 @@
 20. [命令模式（Command Pattern）](20-Command_Pattern.playground/Contents.swift)
 21. [职责链模式（Chain of Responsibility Pattern）](21-Chain_of_Responsibility_Pattern.playground/Contents.swift)
 22. [中介者模式（Mediator Pattern）](22-Mediator_Pattern.playground/Contents.swift)
+23. [享元模式（Flyweight Pattern）](23-Flyweight_Pattern.playground/Contents.swift)
 
 ## 文章
 
