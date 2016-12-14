@@ -48,6 +48,7 @@
 ## 文章
 
 - [Swift 中的值类型与引用类型](http://www.jianshu.com/p/ba12b64f6350)
+- [Swift 中的字符串截取](http://www.jianshu.com/p/94310202ba1b)
 
 ## 参考资料
 
