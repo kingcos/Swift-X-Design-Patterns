@@ -10,7 +10,7 @@ class SingletonClass {
     // 静态常量
     static let sharedInstance = SingletonClass()
     
-    init() {}
+    private init() {}
 }
 
 var i = SingletonClass.sharedInstance
