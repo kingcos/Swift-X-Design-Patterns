@@ -1,6 +1,8 @@
 # Swift-X-Design-Patterns
 
-Design patterns implemented in Swift X. `let x = 4.2`
+Design patterns implemented in Swift X.
+
+[![GitHub license](https://img.shields.io/github/license/kingcos/Swift-X-Design-Patterns.svg?style=for-the-badge)](https://github.com/kingcos/Swift-X-Design-Patterns/blob/master/LICENSE) [![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg?style=for-the-badge)](https://github.com/apple/swift/releases/tag/swift-4.2-RELEASE)
 
 English | [中文](README_CN.md)
 
