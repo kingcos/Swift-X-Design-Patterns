@@ -14,8 +14,7 @@
 
 **由于能力有限，虽在不断学习，但不免有错误，希望您能在 GitHub 中提出 Issue 或者评论告诉我，我都会细心研究，改正错误。谢谢！**
 
-- [博客](https://maimieng.com)
-- [简书](http://www.jianshu.com/users/b88081164fe8/latest_articles)
+- [Perspective - GitHub](https://github.com/kingcos/Perspective)
 
 ## 目录
 

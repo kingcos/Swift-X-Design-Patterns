@@ -14,8 +14,7 @@ If my code did help you, would you please give me a Star 🌟? It will courage m
 
 **No doubt that I would made some mistakes in it, if you find some bugs, please issue me. I am looking forward to discuss with you about the magic of Swift! Thank you!**
 
-- [Blog](https://maimieng.com)
-- [Jian Shu](http://www.jianshu.com/users/b88081164fe8/latest_articles)
+- [Perspective - GitHub](https://github.com/kingcos/Perspective)
 
 ## Contents
 
