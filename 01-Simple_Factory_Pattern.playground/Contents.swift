@@ -1,49 +1,49 @@
 //: Playground - noun: a place where people can play
-// Powered by https://maimieng.com from https://github.com/kingcos/Swift-3-Design-Patterns
+// Powered by https://maimieng.com from https://github.com/kingcos/Swift-X-Design-Patterns
 
 import UIKit
 
 // 协议
 protocol Operator {
-    var num: (Double, Double) { get set }
+    var nums: (Double, Double) { get set }
     
     func getResult() -> Double?
 }
 
 // 遵守协议
 struct Addition: Operator {
-    var num = (0.0, 0.0)
+    var nums = (0.0, 0.0)
     
     func getResult() -> Double? {
-        return num.0 + num.1
+        return nums.0 + nums.1
     }
 }
 
 class Subtraction: Operator {
-    var num = (0.0, 0.0)
+    var nums = (0.0, 0.0)
     
     func getResult() -> Double? {
-        return num.0 - num.1
+        return nums.0 - nums.1
     }
 }
 
 struct Multiplication: Operator {
-    var num = (0.0, 0.0)
+    var nums = (0.0, 0.0)
     
     func getResult() -> Double? {
-        return num.0 * num.1
+        return nums.0 * nums.1
     }
 }
 
 struct Division: Operator {
-    var num = (0.0, 0.0)
+    var nums = (0.0, 0.0)
     
     func getResult() -> Double? {
-        var result: Double?
-        if num.1 != 0 {
-            result = num.0 / num.1
+        guard nums.1 != 0 else {
+            return nil
         }
-        return result
+        
+        return nums.0 / nums.1
     }
 }
 
@@ -69,9 +69,9 @@ struct OperatorFactory {
 }
 
 var testDivision = OperatorFactory.calculateForOperator(.division)
-testDivision.num = (1, 0)
+testDivision.nums = (1, 0)
 print(testDivision.getResult() ?? "Error")
 
 var testAddition = OperatorFactory.calculateForOperator(.addition)
-testAddition.num = (1, 1)
+testAddition.nums = (1, 1)
 print(testAddition.getResult() ?? "Error")

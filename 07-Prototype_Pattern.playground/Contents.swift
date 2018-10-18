@@ -1,5 +1,5 @@
 //: Playground - noun: a place where people can play
-// Powered by https://maimieng.com from https://github.com/kingcos/Swift-3-Design-Patterns
+// Powered by https://maimieng.com from https://github.com/kingcos/Swift-X-Design-Patterns
 
 import UIKit
 
@@ -73,7 +73,7 @@ resumeB.setWorkExperience("2016.9-2016.12", "School")
 let resumeC = resumeA.clone()
 resumeC.setWorkExperience("2014-2018", "University")
 
-//深拷贝
+// 深拷贝
 resumeA.display()
 resumeB.display()
 resumeC.display()
