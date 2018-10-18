@@ -1,5 +1,5 @@
 //: Playground - noun: a place where people can play
-// Powered by https://maimieng.com from https://github.com/kingcos/Swift-3-Design-Patterns
+// Powered by https://maimieng.com from https://github.com/kingcos/Swift-X-Design-Patterns
 
 import UIKit
 
@@ -95,4 +95,3 @@ for i in stride(from: 9, through: 22, by: 1) {
     work.hour = i
     work.writeProgram()
 }
-

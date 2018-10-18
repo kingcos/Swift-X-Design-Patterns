@@ -1,5 +1,5 @@
 //: Playground - noun: a place where people can play
-// Powered by https://maimieng.com from https://github.com/kingcos/Swift-3-Design-Patterns
+// Powered by https://maimieng.com from https://github.com/kingcos/Swift-X-Design-Patterns
 
 import UIKit
 
@@ -11,15 +11,15 @@ struct PlayContext {
 // 表达式
 class Expression {
     func interpret(_ context: inout PlayContext) {
-        if context.text.characters.count != 0 {
+        if context.text.count != 0 {
             let rangeA = Range(uncheckedBounds: (context.text.index(after: context.text.startIndex), context.text.index(context.text.startIndex, offsetBy: 2)))
             
-            let playKey = context.text.substring(with: rangeA)
+            let playKey = String(context.text[rangeA])
             let index = context.text.index(context.text.startIndex, offsetBy: 3)
-            context.text = context.text.substring(from: index)
+            context.text = String(context.text[index...])
             
             let rangeB = Range(uncheckedBounds: (context.text.characters.startIndex, context.text.characters.index(of: " ")!))
-            let playValue = context.text.substring(with: rangeB)
+            let playValue = context.text[rangeB]
             
             context.text = context.text.substring(from: context.text.characters.index(of: " ")!)
             execute(playKey, value: Double(playValue)!)
