@@ -1,14 +1,14 @@
-# Swift-3-Design-Patterns
+# Swift-X-Design-Patterns
 
-Design patterns implemented in Swift 3.0
+Design patterns implemented in Swift X. `let x = 4.2`
 
-[中文版本 README](README_CN.md)
+English | [中文](README_CN.md)
 
 ## Introduction
 
 Hello!
 
-Please forgive my poor English. I am a college student who loved Swift programming language and iOS development from China. This repository is to demonstrate design patterns in Swift 3.0. As we know, Swift is an awesome programming language around the world and it's growth so rapidly. These design patterns will be updated with my new articles in Chinese.
+Please forgive my poor English. I am a college student who loved Swift programming language and iOS development from China. This repository is to demonstrate design patterns in Swift X (`let x = 4.2`). As we know, Swift is an awesome programming language around the world and it's growth so rapidly. These design patterns will be updated with my new articles in Chinese.
 
 If my code did help you, would you please give me a Star 🌟? It will courage me to move on! Thank you!
 
@@ -52,4 +52,4 @@ If my code did help you, would you please give me a Star 🌟? It will courage m
 
 ## License
 
-Apache-2.0
+- Apache-2.0

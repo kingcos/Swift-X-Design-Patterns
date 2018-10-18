@@ -1,12 +1,12 @@
-# Swift-3-Design-Patterns
+# Swift-X-Design-Patterns
 
-使用 Swift 3.0 实现的设计模式
+使用 Swift X 实现的设计模式。`let x = 4.2`
 
-[English Version README](README.md)
+[English](README.md) | 中文
 
 ## 前言
 
-最近在看《大话设计模式》一书，深感设计模式的重要性，因此将 Swift 3.0 的实现版本发布于此，方便自己学习并与大家交流。
+最近在看《大话设计模式》一书，深感设计模式的重要性，因此将 Swift X（`let x = 4.2`）的实现版本发布于此，方便自己学习并与大家交流。
 
 由于设计模式较多，且个个之间并非完全独立，有许多思想是相通的，我将每个设计模式单独为一个 playground 文件，内部的代码规范、命名规则我将尽力遵守，总体顺序、思想、命名参考《大话设计模式》。
 
@@ -57,4 +57,4 @@
 
 ## 许可
 
-Apache-2.0
+- Apache-2.0
