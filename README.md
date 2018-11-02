@@ -10,7 +10,7 @@ English | [中文](README_CN.md)
 
 Hello!
 
-Please forgive my poor English. I am a college student who loved Swift programming language and iOS development from China. This repository is to demonstrate design patterns in Swift X (`let x = 4.2`). As we know, Swift is an awesome programming language around the world and it's growth so rapidly. These design patterns will be updated with my new articles in Chinese.
+Please forgive my poor English. I am a college student who loved Swift programming language and iOS development from China. This repository is to demonstrate design patterns in Swift X (`let X = 4.2`). As we know, Swift is an awesome programming language around the world and it's growth so rapidly. These design patterns will be updated with my new articles in Chinese.
 
 If my code did help you, would you please give me a Star 🌟? It will courage me to move on! Thank you!
 
