@@ -5,16 +5,16 @@ import UIKit
 
 // 单例
 class SingletonClass {
-    var prop = 0
+    var foo = 0
     
     // 静态常量
-    static let sharedInstance = SingletonClass()
+    static let shared = SingletonClass()
     
     private init() {}
 }
 
-var i = SingletonClass.sharedInstance
-i.prop = 100
+let i = SingletonClass.shared
+i.foo = 100
 
-var j = SingletonClass.sharedInstance
-print(j.prop)
+let j = SingletonClass.shared
+print(j.foo)
