@@ -6,12 +6,12 @@ import UIKit
 struct User {}
 
 // 协议
-protocol IUser {
+protocol UserProtocol {
     func insert(_ user: User)
     func get(_ id: Int) -> User
 }
 
-struct SQLServerUser: IUser {
+struct SQLServerUser: UserProtocol {
     func insert(_ user: User) {
         print("\(#function) user")
     }
@@ -22,7 +22,7 @@ struct SQLServerUser: IUser {
     }
 }
 
-struct AccessUser: IUser {
+struct AccessUser: UserProtocol {
     func insert(_ user: User) {
         print("\(#function) user")
     }
@@ -36,12 +36,12 @@ struct AccessUser: IUser {
 struct Department {}
 
 // 协议
-protocol IDepartment {
+protocol DepartmentProtocol {
     func insert(_ department: Department)
     func get(_ id: Int) -> Department
 }
 
-struct SQLServerDepartment: IDepartment {
+struct SQLServerDepartment: DepartmentProtocol {
     func insert(_ department: Department) {
         print("\(#function) department")
     }
@@ -52,7 +52,7 @@ struct SQLServerDepartment: IDepartment {
     }
 }
 
-struct AccessDepartment: IDepartment {
+struct AccessDepartment: DepartmentProtocol {
     func insert(_ department: Department) {
         print("\(#function) department")
     }
@@ -64,27 +64,27 @@ struct AccessDepartment: IDepartment {
 }
 
 // 工厂协议
-protocol IFactory {
-    func createUser() -> IUser
-    func createDepartment() -> IDepartment
+protocol FactoryProtocol {
+    func createUser() -> UserProtocol
+    func createDepartment() -> DepartmentProtocol
 }
 
-struct SqlServerFactory: IFactory {
-    func createUser() -> IUser {
+struct SqlServerFactory: FactoryProtocol {
+    func createUser() -> UserProtocol {
         return SQLServerUser()
     }
     
-    func createDepartment() -> IDepartment {
+    func createDepartment() -> DepartmentProtocol {
         return SQLServerDepartment()
     }
 }
 
-struct AccessFactory: IFactory {
-    func createUser() -> IUser {
+struct AccessFactory: FactoryProtocol {
+    func createUser() -> UserProtocol {
         return AccessUser()
     }
     
-    func createDepartment() -> IDepartment {
+    func createDepartment() -> DepartmentProtocol {
         return AccessDepartment()
     }
 }
@@ -92,7 +92,7 @@ struct AccessFactory: IFactory {
 let userA = User()
 let departmentA = Department()
 
-let factory: IFactory
+let factory: FactoryProtocol
 factory = AccessFactory()
 
 let iuA = factory.createUser()
@@ -111,7 +111,7 @@ enum Database {
 struct DataAccess {
     static var database: Database = .access
     
-    static func createUser() -> IUser {
+    static func createUser() -> UserProtocol {
         switch database {
         case .sqlServer:
             return SQLServerUser()
@@ -120,7 +120,7 @@ struct DataAccess {
         }
     }
     
-    static func createDepartment() -> IDepartment {
+    static func createDepartment() -> DepartmentProtocol {
         switch database {
         case .sqlServer:
             return SQLServerDepartment()
