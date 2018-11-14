@@ -19,7 +19,7 @@ struct Addition: Operator {
     }
 }
 
-class Subtraction: Operator {
+struct Subtraction: Operator {
     var nums = (0.0, 0.0)
     
     func getResult() -> Double? {
