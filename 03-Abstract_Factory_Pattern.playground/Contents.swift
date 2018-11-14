@@ -11,7 +11,7 @@ protocol IUser {
     func get(_ id: Int) -> User
 }
 
-struct SqlServerUser: IUser {
+struct SQLServerUser: IUser {
     func insert(_ user: User) {
         print("\(#function) user")
     }
@@ -41,7 +41,7 @@ protocol IDepartment {
     func get(_ id: Int) -> Department
 }
 
-struct SqlServerDepartment: IDepartment {
+struct SQLServerDepartment: IDepartment {
     func insert(_ department: Department) {
         print("\(#function) department")
     }
@@ -71,11 +71,11 @@ protocol IFactory {
 
 struct SqlServerFactory: IFactory {
     func createUser() -> IUser {
-        return SqlServerUser()
+        return SQLServerUser()
     }
     
     func createDepartment() -> IDepartment {
-        return SqlServerDepartment()
+        return SQLServerDepartment()
     }
 }
 
@@ -114,7 +114,7 @@ struct DataAccess {
     static func createUser() -> IUser {
         switch database {
         case .sqlServer:
-            return SqlServerUser()
+            return SQLServerUser()
         case .access:
             return AccessUser()
         }
@@ -123,7 +123,7 @@ struct DataAccess {
     static func createDepartment() -> IDepartment {
         switch database {
         case .sqlServer:
-            return SqlServerDepartment()
+            return SQLServerDepartment()
         case .access:
             return AccessDepartment()
         }
