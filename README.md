@@ -2,7 +2,7 @@
 
 Design patterns implemented in Swift X.
 
-[![GitHub license](https://img.shields.io/github/license/kingcos/Swift-X-Design-Patterns.svg?style=for-the-badge)](https://github.com/kingcos/Swift-X-Design-Patterns/blob/master/LICENSE) [![Swift 4.2](https://img.shields.io/badge/Swift-4.2-orange.svg?style=for-the-badge)](https://github.com/apple/swift/releases/tag/swift-4.2-RELEASE)
+[![GitHub license](https://img.shields.io/github/license/kingcos/Swift-X-Design-Patterns.svg?style=for-the-badge)](https://github.com/kingcos/Swift-X-Design-Patterns/blob/master/LICENSE) [![Swift 5.3](https://img.shields.io/badge/Swift-5.3-orange.svg?style=for-the-badge)](https://github.com/apple/swift/releases/tag/swift-5.3-RELEASE)
 
 English | [中文](README_CN.md)
 
@@ -10,7 +10,7 @@ English | [中文](README_CN.md)
 
 Hello!
 
-Please forgive my poor English. I am a college student who loved Swift programming language and iOS development from China. This repository is to demonstrate design patterns in Swift X (`let X = 4.2`). As we know, Swift is an awesome programming language around the world and it's growth so rapidly. These design patterns will be updated with my new articles in Chinese.
+Please forgive my poor English. I am a college student who loved Swift programming language and iOS development from China. This repository is to demonstrate design patterns in Swift X (`let X = 5.3`). As we know, Swift is an awesome programming language around the world and it's growth so rapidly. These design patterns will be updated with my new articles in Chinese.
 
 If my code did help you, would you please give me a Star 🌟? It will courage me to move on! Thank you!
 
