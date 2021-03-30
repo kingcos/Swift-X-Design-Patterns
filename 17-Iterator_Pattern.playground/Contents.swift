@@ -16,7 +16,7 @@ protocol Aggregate {
     func iterator() -> U
 }
 
-// ---
+// --
 
 struct Book {
     var name: String
@@ -68,10 +68,12 @@ struct BookShelf : Aggregate {
         books.append(book)
     }
     
+    // 自定义 Iterator
     func iterator() -> BookShelfIterator {
         return BookShelfIterator(self)
     }
     
+    // Swift 自带 IteratorProtocol
     func iterator2() -> BookShelfIterator2 {
         return makeIterator()
     }
@@ -84,27 +86,16 @@ bs.append(.init(name: "B"))
 bs.append(.init(name: "C"))
 bs.append(.init(name: "D"))
 
-let iterator = bs.iterator()
-while iterator.hasNext() {
-    print(iterator.next()?.name ?? "")
-}
-
-// ---
-
-// public protocol Sequence {
-//     // ...
-//
-//     associatedtype Iterator : IteratorProtocol
-//
-//     func makeIterator() -> Self.Iterator
-//
-//     // ...
-// }
-extension BookShelf : Sequence {
-    func makeIterator() -> BookShelfIterator2 {
-        return BookShelfIterator2(self)
+func testCustomIterator(_ bs: BookShelf) {
+    let iterator = bs.iterator()
+    while iterator.hasNext() {
+        print(iterator.next()?.name ?? "")
     }
 }
+
+testCustomIterator(bs)
+
+// ---
 
 // public protocol IteratorProtocol {
 //     associatedtype Element
@@ -128,12 +119,35 @@ struct BookShelfIterator2 : IteratorProtocol {
     }
 }
 
-var iterator2 = bs.iterator2()
-while let next = iterator2.next() {
-    print(next.name)
+func testSwiftIteratorProtocol(_ bs: BookShelf) {
+    var iterator2 = bs.iterator2()
+    while let next = iterator2.next() {
+        print(next.name)
+    }
 }
 
-// 遵守 Sequence 协议后，for-in 将通过 Iterator 的 next 遍历
-for i in bs {
-    print(i.name)
+testSwiftIteratorProtocol(bs)
+
+// public protocol Sequence {
+//     // ...
+//
+//     associatedtype Iterator : IteratorProtocol
+//
+//     func makeIterator() -> Self.Iterator
+//
+//     // ...
+// }
+extension BookShelf : Sequence {
+    func makeIterator() -> BookShelfIterator2 {
+        return BookShelfIterator2(self)
+    }
 }
+
+func testSwiftSequence(_ bs: BookShelf) {
+    // 遵守 Sequence 协议后，for-in 将通过 Iterator 的 next 遍历
+    for i in bs {
+        print(i.name)
+    }
+}
+
+testSwiftSequence(bs)
