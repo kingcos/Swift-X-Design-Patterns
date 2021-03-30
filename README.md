@@ -49,6 +49,7 @@ If my code did help you, would you please give me a Star 🌟? It will courage m
 ## Reference
 
 - [大话设计模式](https://book.douban.com/subject/2334288/)
+- [图解设计模式](https://book.douban.com/subject/26933281/)
 - [ochococo/Design-Patterns-In-Swift](https://github.com/ochococo/Design-Patterns-In-Swift)
 
 ## License
