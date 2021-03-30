@@ -3,41 +3,6 @@
 
 import UIKit
 
-// Crowd 序列
-struct Crowd: Sequence {
-    let end: Int
-    
-    func makeIterator() -> CrowdIterator {
-        return CrowdIterator(self)
-    }
-}
-
-// Crowd 迭代器
-struct CrowdIterator: IteratorProtocol {
-    var crowd: Crowd
-    var times: Int
-    
-    init(_ crowd: Crowd) {
-        self.crowd = crowd
-        times = crowd.end - 1
-    }
-    
-    mutating func next() -> Int? {
-        let nextNumber = crowd.end - times
-        guard nextNumber <= crowd.end else { return nil }
-        
-        times -= 1
-        return nextNumber
-    }
-}
-
-// 迭代
-for i in Crowd(end: 10) {
-    print(i)
-}
-
-// -·-·-·-·-
-
 protocol Iterator {
     associatedtype T
     
@@ -72,9 +37,7 @@ class BookShelfIterator: Iterator {
     }
     
     func next() -> Book? {
-        defer {
-            idx += 1
-        }
+        defer { idx += 1 } // 先返回，再执行
 
         return bookShelf.get(idx)
     }
@@ -94,7 +57,7 @@ struct BookShelf : Aggregate {
     }
     
     func get(_ idx: Int) -> Book? {
-        if idx > books.count && idx < 0 {
+        if idx >= books.count || idx < 0 {
             return nil
         }
         
@@ -108,6 +71,10 @@ struct BookShelf : Aggregate {
     func iterator() -> BookShelfIterator {
         return BookShelfIterator(self)
     }
+    
+    func iterator2() -> BookShelfIterator2 {
+        return makeIterator()
+    }
 }
 
 // ---
@@ -120,4 +87,53 @@ bs.append(.init(name: "D"))
 let iterator = bs.iterator()
 while iterator.hasNext() {
     print(iterator.next()?.name ?? "")
+}
+
+// ---
+
+// public protocol Sequence {
+//     // ...
+//
+//     associatedtype Iterator : IteratorProtocol
+//
+//     func makeIterator() -> Self.Iterator
+//
+//     // ...
+// }
+extension BookShelf : Sequence {
+    func makeIterator() -> BookShelfIterator2 {
+        return BookShelfIterator2(self)
+    }
+}
+
+// public protocol IteratorProtocol {
+//     associatedtype Element
+//
+//     mutating func next() -> Self.Element?
+// }
+struct BookShelfIterator2 : IteratorProtocol {
+    typealias Element = Book
+    
+    var bookShelf: BookShelf
+    var idx = 0
+    
+    init(_ bookShelf: BookShelf) {
+        self.bookShelf = bookShelf
+    }
+    
+    mutating func next() -> Book? {
+        defer { idx += 1 }
+        
+        return bookShelf.get(idx)
+    }
+}
+
+var iterator2 = bs.iterator2()
+while let next = iterator2.next() {
+    print(next.name)
+}
+
+// 遵守 Sequence 协议后，for-in 将通过 Iterator 的 next 遍历
+for i in bs {
+    print(i.name)
 }
