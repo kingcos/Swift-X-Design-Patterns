@@ -4,6 +4,7 @@ class AbstractDisplay { // Abstract Class
     func open() { fatalError() }
     func print() { fatalError() }
     func close() { fatalError() }
+    
     func display() {
         open()
         
