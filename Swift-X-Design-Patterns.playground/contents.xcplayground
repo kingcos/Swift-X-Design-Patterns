@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true'>
+    <pages>
+        <page name='00'/>
+        <page name='01-Iterator_Pattern'/>
+        <page name='02-Adapter_Pattern'/>
+    </pages>
+</playground>
